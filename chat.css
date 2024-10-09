@@ -2,28 +2,26 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(167, 141, 234);
 }
-.container-chat{
-    width: 80%;
-    margin: 0;
-    border: 1px solid #ccc;
+
+.chat-container{
+    width: 60%;
+    margin: 0 auto;
     padding: 10px;
-    width: 100%;
-    height:100vh ;
-    margin: 0;
-    padding: 10px;
-    border: 1px;
+    height: 100vh;
     box-sizing: border-box;
 }
-.box-chat{
+
+.chat-box{
     width: 100%;
     height: 90%;
-    border: 1px rgb(253, 189, 211);
-    overflow-y:auto ;
+    border: 1px solid rgb(253, 189, 211);
+    overflow-y: auto;
     padding: 10px;
     box-sizing: border-box;
-    background:rgb(216, 192, 242);
-    border-radius: 20px;
+    background: rgb(216, 192, 242);
+    border-radius: 10px;
 }
+
 .message{
     max-width: 60%;
     padding: 10px;
@@ -31,40 +29,77 @@ body{
     margin: 5px 0;
     clear: both;
 }
-.message-persona1{
+
+.message-user1{
     float: right;
-    color: darkmagenta;
+    background-color: #fa7fe7;
+    color: white;
     border: 1px solid #ffffff;
 }
-.message-persona2{
-    float: right;
+
+.message-user2{
+    float: left;
+    background-color: rgb(211, 120, 253);
+    color: white;
     border: 1px solid #ffffff;
-    color: darkmagenta;
 }
-.imput-container{
+
+.input-container{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-
 }
-.imput-box {
+
+.input-box {
     display: flex;
     align-items: center;
     padding: 5px;
     border-radius: 5px;
-    width: 48%;
+    width: 100%;
 }
-.imput-box input [type="text"]{
+
+.input-box input[type="text"] {
     border: none;
     outline: none;
     flex-grow: 1;
     margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
 }
-.imput-box button{
-    background-color: rgb(232, 144, 173);
-    border: 1px solid #ccc;
+
+.input-box button {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+}
 
+.input-box.user1 button {
+    background-color: #fe3d70;
+    border: 1px solid #ccc;
+}
+
+.input-box.user1 button:hover {
+    background-color: #f1acbe;
+}
+
+.input-box.user2 button {
+    background-color: #4f12e8;
+    border: 1px solid #ccc;
+}
+
+.input-box.user2 button:hover {
+    background-color: #8657fe;
+}
+
+.input-box .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.input-box.user1 .icon {
+    color: #fe3d70;
+}
+
+.input-box.user2 .icon {
+    color: #4f12e8;
 }
